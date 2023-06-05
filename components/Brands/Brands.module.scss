@@ -1,0 +1,208 @@
+.brands {
+    margin-top: 6rem;
+    display: block;
+
+    .brands__header {
+        display: flex;
+        justify-content: space-evenly;
+        width: 100%;
+    }
+    .brands__content {
+        display: flex;
+        margin: 6rem 0;
+        gap: 14px;
+    }
+}
+
+.brands__left {
+    position: relative;
+    display: inline-block;
+
+    > p {
+        font-weight: 400;
+        font-size: 32px;
+        line-height: 40px;
+        text-align: center;
+        text-transform: uppercase;
+        letter-spacing: 2px;
+        color: #000000;
+        position: absolute;
+        bottom: -5%;
+        left: 0;
+        transform-origin: 0 0;
+        transform: rotate(-90deg);
+    }
+    .brands__index {
+        margin-left: 3rem;
+        position: relative;
+    }
+    .brand__item__hover {
+        position: relative;
+    }
+    .brands__index:hover > .item__hover {
+        opacity: 1;
+        bottom: 0;
+        transition: all 0.5s ease;
+    }
+}
+.brands__right {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 10px;
+
+    .brands__right__item {
+        width: calc(100%/2 - 5px);
+        position: relative;
+    }
+    .brands__right__item:hover > .item__hover {
+        opacity: 0.9;
+        bottom: 0;
+        transition: all 0.5s ease;
+    }
+}
+.item__hover {
+    position: absolute;
+    display: flex;
+    justify-content: space-between;
+    left: 0;
+    bottom: -10%;
+    right: 0;
+    opacity: 0;
+    padding: 1rem;
+    color: #fff;
+    background-color: #1e2832;
+    font-size: 20px;
+    letter-spacing: 1px;
+}
+
+
+.brands__subscribe {
+ 
+    h1 {
+        font-weight: 600;
+        font-size: 50px;
+        line-height: 59px;
+        text-align: center;
+        text-transform: capitalize;
+        color: #000000;
+        line-height: 70px;
+    }
+}
+.brands__subscribe__content {
+
+    .brands__subscribe__nav {
+        margin: 1rem 0;
+
+        span {
+            font-weight: 600;
+            font-size: 20px;
+            line-height: 22px;
+            text-transform: capitalize;
+            color: rgba(0, 0, 0, 0.5);
+
+            + span {
+                margin-left: 2rem;
+            }
+        }
+        .active {
+            color: #000;
+        }
+    }
+    .brands__subscribe__container {
+        display: flex;
+        flex-wrap: wrap;
+        gap: 1rem;
+    }
+}
+
+.brands__subscribe__item {
+    min-width: calc(100% / 4 - 0.75rem);
+    position: relative;
+
+    p {
+        font-weight: 600;
+        font-size: 16px;
+        line-height: 22px;
+        text-transform: capitalize;
+        color: #000000;
+        margin: 0 1rem;
+    }
+    .subscribe__item-group {
+        display: flex;
+        justify-content: space-between;
+        margin: 0 1rem;
+
+        span {
+            font-weight: 400;
+            font-size: 16px;
+            line-height: 22px;
+            text-transform: capitalize;
+            color: rgba(0, 0, 0, 0.5);
+        }
+        p {
+            font-weight: 600;
+            font-size: 16px;
+            line-height: 22px;
+        }
+
+        .subscribe__item-sale {
+            display: flex;
+            align-items: center;
+            span {
+                text-decoration:line-through
+            }
+            p {
+                color: #ff6f61;
+            }
+        }
+    }
+
+    .item__hover {
+        align-items: center;
+        .item__icon-group {
+            svg + svg {
+                margin-left: 1rem;
+            }
+        }
+        z-index: 999;
+        button {
+            gap: 10px;
+
+            span {
+                font-size: 20px;
+            }
+        }
+        button:hover {
+            svg {
+                path {
+                    stroke: #ff6f61;
+                    fill: #ff6f61;
+                }
+            }
+            > span {
+                color: #ff6f61;
+            }
+        }   
+    }
+}
+
+.brands__subscribe__item:hover > .item__hover {
+    opacity: 1;
+    bottom: 0;
+    transition: all 0.5s ease;
+ 
+}
+
+.coupon {
+    position: absolute;
+    top: 0;
+    left: 0;
+    padding: 6px 1rem;
+    font-weight: 600;
+    letter-spacing: 0.8px;
+    font-size: 12px;
+    line-height: 16px;
+    text-align: center;
+    text-transform: uppercase;
+    color: #FFFFFF;
+}

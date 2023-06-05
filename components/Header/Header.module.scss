@@ -1,0 +1,19 @@
+.header {
+    margin: 1rem 13% 1rem 13%;
+    display: flex;
+    justify-content: space-between;
+
+    .header__search {
+        
+    }
+    .header__logo {
+        font-weight: 400;
+        font-size: 42px;
+        line-height: 50px;
+        color: #000000;
+    }
+    .header__btn__icon {
+        display: flex;
+        gap: 1rem;
+    }
+}
