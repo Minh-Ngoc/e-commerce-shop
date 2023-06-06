@@ -6,6 +6,8 @@ import CartIcon from '@/assets/imgs/cart-icon.png';
 import ImageFlower from '@/assets/imgs/Frame.svg';
 import ImageFlower1 from '@/assets/imgs/Frame1.svg';
 import Cart from '@/assets/imgs/cart.svg';
+import Account from '@/assets/imgs/account.svg';
+import FilterIcon from '@/assets/imgs/filter-icon.svg';
 import Heart from '@/assets/imgs/heart.svg';
 import Search from '@/assets/imgs/search.svg';
 import Brand1 from '@/assets/imgs/brand-1.png';
@@ -26,7 +28,16 @@ import Product5 from '@/assets/imgs/5.png';
 import Product6 from '@/assets/imgs/6.png';
 import Product7 from '@/assets/imgs/7.png';
 import Product8 from '@/assets/imgs/8.png';
-
+import BannerBg from '@/assets/imgs/banner.png';
+import BannerLogo from '@/assets/imgs/Zara-logo1.png';
+import BannerLogo2 from '@/assets/imgs/Zara-logo2.png';
+import FlPrd1 from '@/assets/imgs/fp1.png';
+import FlPrd2 from '@/assets/imgs/fp2.png';
+import FlPrd3 from '@/assets/imgs/fp3.png';
+import FlPrd4 from '@/assets/imgs/fp4.png';
+import FlPrd5 from '@/assets/imgs/fp5.png';
+import FlPrd6 from '@/assets/imgs/fp6.png';
+import Instagram from '@/assets/imgs/instagram.svg';
 export {
     CartIconWhite,
     ImageSlider,
@@ -56,4 +67,16 @@ export {
     Heart,
     Search,
     Cart,
+    Account,
+    BannerBg,
+    BannerLogo,
+    BannerLogo2,
+    FilterIcon,
+    FlPrd1,
+    FlPrd2,
+    FlPrd3,
+    FlPrd4,
+    FlPrd5,
+    FlPrd6,
+    Instagram,
 }

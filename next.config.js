@@ -7,11 +7,13 @@ const nextConfig = {
       issuer: /\.[jt]sx?$/,
       use: ['@svgr/webpack'],
     });
+    
     return config;
   },
   images: {
     unoptimized: true,
   },
+  
 }
 
 module.exports = nextConfig

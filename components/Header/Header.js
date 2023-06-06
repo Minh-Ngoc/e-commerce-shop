@@ -2,7 +2,7 @@ import Wrapper from "../Wrapper";
 import classNames from 'classnames/bind';
 import styles from './Header.module.scss';
 import Button from "../Button";
-import { SearchIcon, AccountIcon, CartIcon } from '../ImagesItem';
+import { SearchIcon, Account, Cart } from '../ImagesItem';
 
 const cx = classNames.bind(styles);
 
@@ -18,8 +18,8 @@ const Header = () => {
             </div>
 
             <div className={cx('header__btn__icon')}>
-                <Button border='none' icon={AccountIcon} text='Account' />
-                <Button border='none' icon={CartIcon} text='Shopping' />
+                <Button border='none' svg={<Account />} text='Account' />
+                <Button border='none' svg={<Cart />} text='Shopping' />
             </div>
         </Wrapper>
     )

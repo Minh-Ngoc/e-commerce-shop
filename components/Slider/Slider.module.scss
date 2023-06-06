@@ -1,5 +1,7 @@
 .slider {
-
+    padding: 0 13%;
+    background-color: rgba(0,0,0,0.06);
+    
     .slider__container {
         display: flex;
         justify-content: space-between;
@@ -57,16 +59,13 @@
     
     svg {
         position: absolute;
-
-        path {
-            stroke: #ccc;
-        }
     }
     .svg1 {
         left: 0;
+        top: 130px;
     }
     .svg {
-        right: -2%;
-        top: -10%;
+        right: -1%;
+        bottom: -146px;
     }
 }

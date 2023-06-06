@@ -16,7 +16,7 @@ const Slider = () => {
                     <p>you can explore ans shop many differnt collection
                         from various barands here.
                     </p>
-                    <Button src={CartIconWhite} text='Shop Now' />
+                    <Button border='none' src={CartIconWhite} text='Shop Now' />
                 </div>
                 <Image className={cx('slider__image')} src={ImageSlider} />
             </div>

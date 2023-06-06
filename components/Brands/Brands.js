@@ -4,10 +4,10 @@ import styles from './Brands.module.scss';
 import { Brand1, Brand2, Brand3, Brand4, Brand5, 
     CateIndex, CateItem1, CateItem2, CateItem3, CateItem4, 
     Product1, Product2, Product3, Product4, Product5, Product6, Product7, Product8, 
-    Heart, Search, Cart
+    FilterIcon,
 } from '../ImagesItem';
-import Button from "../Button";
 import Image from "../ImageComp";
+import Products from "../Products";
 
 const cx = classNames.bind(styles);
 
@@ -179,72 +179,12 @@ const Brands = () => {
                 </div>
             </div>
 
-            <div className={cx('brands__subscribe')}>
-                <h1>Or subscribe to the newsletter</h1>
-                <div className={cx('brands__subscribe__content')}>
-                    <div className={cx('brands__subscribe__nav')}>
-                        <span className={cx('active')}>All Products</span>
-                        <span>T-Shirt</span>
-                        <span>Hoodies</span>
-                        <span>Jacket</span>
-                    </div>
-                    <div className={cx('brands__subscribe__container')}>
-                        {
-                            productsItem.map(product => 
-                                <div className={cx('brands__subscribe__item')} key={product.id}>
-                                    <Image src={product.image} alt='ErrorProduct' />
-                                    <p> {product.name} </p>
-                                    <div className={cx('subscribe__item-group')}>
-                                        <span> {product.cate} </span>
-                                        {
-                                            product.sale > 0 ? (
-                                                <div className={cx('subscribe__item-sale')}>
-                                                    <span> ${product.price.toFixed(2)} </span>
-                                                    <p> ${(product.price - product.sale).toFixed(2)} </p>
-                                                </div> 
-                                            ) : (
-                                                <p> ${product.price.toFixed(2)} </p>
-                                            )
-                                        }
-                                    </div>
-
-                                    {
-                                        product.hot ? (
-                                            <span 
-                                                style={{backgroundColor: '#ff6f61'}} 
-                                                className={cx('coupon')}
-                                            > 
-                                                Hot
-                                            </span>
-                                        ) : product.sale > 0  ? (
-                                            <span 
-                                                style={{backgroundColor: '#1e2832'}} 
-                                                className={cx('coupon')}
-                                            > 
-                                                Sale
-                                            </span>
-                                        ) : ''
-                                    }
-                                    <div className={cx('item__hover')}>
-                                        <div className={cx('item__icon-group')}>
-                                            <Heart />
-                                            <Search />
-                                        </div>
-                                        <Button 
-                                            svg={<Cart />} 
-                                            text='Shop Now' 
-                                            bg='transparent !important'
-                                            color='#fff'
-                                            border='none'
-                                        />
-                                    </div>
-                                </div>
-                            )
-                        }
-                        
-                    </div>
-                </div>  
-            </div>        
+            <Products 
+                title='Or Subscribe To The Newsletter' 
+                data={productsItem}
+                filterIcon={ <FilterIcon/> }
+                filterText='Filter'
+            />    
 
         </Wrapper>
     )

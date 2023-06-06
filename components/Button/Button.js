@@ -6,7 +6,7 @@ import Image from "next/image";
 
 const cx = classNames.bind(styles);
 
-const ButtonComp = ({ svg, src, text, icon, border, bg, color }) => {
+const ButtonComp = ({ svg, src, text, icon, border, bg, color, className }) => {
     const style = {
         border: border && border,
         backgroundColor: bg && bg,
@@ -15,7 +15,7 @@ const ButtonComp = ({ svg, src, text, icon, border, bg, color }) => {
     return (
         <Button 
             style={style}
-            className={cx('button')} 
+            className={cx('button', className)} 
             icon={ 
                 icon && ( <Image src={icon} alt="ErrorIcon" /> )
             }

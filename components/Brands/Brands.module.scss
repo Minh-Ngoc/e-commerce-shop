@@ -1,6 +1,7 @@
 .brands {
     margin-top: 6rem;
     display: block;
+    padding: 0 13%;
 
     .brands__header {
         display: flex;
@@ -113,84 +114,6 @@
         flex-wrap: wrap;
         gap: 1rem;
     }
-}
-
-.brands__subscribe__item {
-    min-width: calc(100% / 4 - 0.75rem);
-    position: relative;
-
-    p {
-        font-weight: 600;
-        font-size: 16px;
-        line-height: 22px;
-        text-transform: capitalize;
-        color: #000000;
-        margin: 0 1rem;
-    }
-    .subscribe__item-group {
-        display: flex;
-        justify-content: space-between;
-        margin: 0 1rem;
-
-        span {
-            font-weight: 400;
-            font-size: 16px;
-            line-height: 22px;
-            text-transform: capitalize;
-            color: rgba(0, 0, 0, 0.5);
-        }
-        p {
-            font-weight: 600;
-            font-size: 16px;
-            line-height: 22px;
-        }
-
-        .subscribe__item-sale {
-            display: flex;
-            align-items: center;
-            span {
-                text-decoration:line-through
-            }
-            p {
-                color: #ff6f61;
-            }
-        }
-    }
-
-    .item__hover {
-        align-items: center;
-        .item__icon-group {
-            svg + svg {
-                margin-left: 1rem;
-            }
-        }
-        z-index: 999;
-        button {
-            gap: 10px;
-
-            span {
-                font-size: 20px;
-            }
-        }
-        button:hover {
-            svg {
-                path {
-                    stroke: #ff6f61;
-                    fill: #ff6f61;
-                }
-            }
-            > span {
-                color: #ff6f61;
-            }
-        }   
-    }
-}
-
-.brands__subscribe__item:hover > .item__hover {
-    opacity: 1;
-    bottom: 0;
-    transition: all 0.5s ease;
- 
 }
 
 .coupon {

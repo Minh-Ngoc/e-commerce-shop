@@ -1,0 +1,124 @@
+.item__hover {
+    position: absolute;
+    display: flex;
+    justify-content: space-between;
+    left: 0;
+    bottom: -10%;
+    right: 0;
+    opacity: 0;
+    padding: 1rem;
+    color: #fff;
+    background-color: #1e2832;
+    font-size: 20px;
+    letter-spacing: 1px;
+}
+
+.brands__subscribe__item {
+    min-width: calc(100% / 4 - 0.75rem);
+    position: relative;
+
+    p {
+        font-weight: 600;
+        font-size: 16px;
+        line-height: 22px;
+        text-transform: capitalize;
+        color: #000000;
+        margin: 0 1rem;
+    }
+    .subscribe__item-group {
+        display: flex;
+        justify-content: space-between;
+        margin: 0 1rem;
+
+        span {
+            font-weight: 400;
+            font-size: 16px;
+            line-height: 22px;
+            text-transform: capitalize;
+            color: rgba(0, 0, 0, 0.5);
+        }
+        p {
+            font-weight: 600;
+            font-size: 16px;
+            line-height: 22px;
+        }
+
+        .subscribe__item-sale {
+            display: flex;
+            align-items: center;
+            span {
+                text-decoration:line-through
+            }
+            p {
+                color: #ff6f61;
+            }
+        }
+    }
+    .product__image {
+        position: relative;
+        margin-bottom: 1rem;
+    }
+
+    .item__hover {
+        align-items: center;
+        .item__icon-group {
+            svg + svg {
+                margin-left: 1rem;
+            }
+        }
+        z-index: 999;
+        button {
+            gap: 10px;
+
+            span {
+                font-size: 20px;
+            }
+        }
+        button:hover {
+            svg {
+                path {
+                    stroke: #ff6f61;
+                    fill: #ff6f61;
+                }
+            }
+            > span {
+                color: #ff6f61;
+            }
+        }   
+    }
+}
+
+.brands__subscribe__item:hover .item__hover {
+    opacity: 1;
+    bottom: 0;
+    transition: all 0.5s ease;
+}
+.brands__subscribe__item:hover  .subscribe__item-sale {
+    span {
+        opacity: 0;
+        transition: all 0.5s ease;
+
+    }
+    p {
+        transition: all 0.5s ease;
+        color: #000;
+    }
+}
+
+.coupon {
+    position: absolute;
+    top: 0;
+    left: 0;
+    padding: 6px 1rem;
+    font-weight: 600;
+    letter-spacing: 0.8px;
+    font-size: 12px;
+    line-height: 16px;
+    text-align: center;
+    text-transform: uppercase;
+    color: #FFFFFF;
+}
+
+.carousel-container {
+    width: 800px;
+}
