@@ -44,6 +44,8 @@ import TwitterIcon from '@/assets/imgs/twitter-icon.svg';
 import LinkedIcon from '@/assets/imgs/in-icon.svg';
 import InstagramIcon from '@/assets/imgs/instagram-icon.svg';
 import ArrowIcon from '@/assets/imgs/arrow.svg';
+import ArrowLeft from '@/assets/imgs/arrow-left.svg';
+import ArrowRight from '@/assets/imgs/arrow-right.svg';
 export {
     CartIconWhite,
     ImageSlider,
@@ -91,4 +93,6 @@ export {
     InstagramIcon,
     FooterImage,
     ArrowIcon,
+    ArrowLeft,
+    ArrowRight,
 }

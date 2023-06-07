@@ -3,20 +3,36 @@ import styles from './Products.module.scss';
 import Card from "../Card";
 import Button from '../Button';
 import Slider from "react-slick";
+import { ArrowLeft, ArrowRight } from '../ImagesItem';
 
 const cx = classNames.bind(styles);
 
 const Products = ({ title, data, filterIcon, filterText, slider, ...props }) => {
+    const Arrows = ({className, left, icon, onClick}) => {
+        return (
+          <Button
+            left={left}
+            className={className}
+            onClick={onClick}
+            svg={icon}
+          />
+        );
+    }
+
     const settings = {
         dots: true,
         infinite: true,
-        slidesToShow: 4,
+        slidesToShow: 3,
         slidesToScroll: 1,
         autoplay: true,
-        speed: 400,
         autoplaySpeed: 2000,
-        cssEase: "linear"
-      };
+        pauseOnHover: true,
+        prevArrow: <Arrows className={cx('slick__arrow')} left='-5rem' icon={<ArrowLeft />} />,
+        nextArrow: <Arrows className={cx('slick__arrow')} icon={<ArrowRight />} />,
+    };
+    
+      
+
     return (
         <div className={cx('products')}>
             <h1> { title } </h1>
@@ -33,7 +49,7 @@ const Products = ({ title, data, filterIcon, filterText, slider, ...props }) => 
                     text={filterText}
                 />
             </div>  
-            <div>
+            <div className={cx('product__slider')}>
                 {
                     slider ? (
                         <Slider {...settings}>
