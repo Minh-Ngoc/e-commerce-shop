@@ -1,6 +1,7 @@
 import classNames from 'classnames/bind';
 import styles from './BestSeller.module.scss';
 import Products from '../Products';
+import NavFooter from '../NavFooter';
 import { Product2, Product4, Product5, Product6, Product7, Product8, 
 } from '../ImagesItem';
 import FollowProducts from "@/components/FollowProducts";
@@ -75,6 +76,7 @@ const BestSeller = () => {
                 filterText='Show All'
             />
             <FollowProducts />
+            <NavFooter />
         </div>
     )
 }

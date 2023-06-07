@@ -37,7 +37,13 @@ import FlPrd3 from '@/assets/imgs/fp3.png';
 import FlPrd4 from '@/assets/imgs/fp4.png';
 import FlPrd5 from '@/assets/imgs/fp5.png';
 import FlPrd6 from '@/assets/imgs/fp6.png';
+import FooterImage from '@/assets/imgs/footer.png';
 import Instagram from '@/assets/imgs/instagram.svg';
+import FacebookIcon from '@/assets/imgs/facebook-icon.svg';
+import TwitterIcon from '@/assets/imgs/twitter-icon.svg';
+import LinkedIcon from '@/assets/imgs/in-icon.svg';
+import InstagramIcon from '@/assets/imgs/instagram-icon.svg';
+import ArrowIcon from '@/assets/imgs/arrow.svg';
 export {
     CartIconWhite,
     ImageSlider,
@@ -79,4 +85,10 @@ export {
     FlPrd5,
     FlPrd6,
     Instagram,
+    FacebookIcon,
+    TwitterIcon,
+    LinkedIcon,
+    InstagramIcon,
+    FooterImage,
+    ArrowIcon,
 }
