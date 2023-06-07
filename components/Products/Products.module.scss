@@ -17,7 +17,7 @@
  
     h1 {
         font-weight: 500;
-        font-size: 59px;
+        font-size: 50px;
         line-height: 59px;
         text-align: center;
         text-transform: capitalize;
@@ -85,4 +85,8 @@
     text-align: center;
     text-transform: uppercase;
     color: #FFFFFF;
+}
+
+.slick__arrow {
+    background-color: #ff6f61 !important;
 }
