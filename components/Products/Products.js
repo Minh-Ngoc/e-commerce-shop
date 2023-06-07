@@ -20,7 +20,7 @@ const Products = ({ title, data, filterIcon, filterText, slider, ...props }) => 
     }
 
     const settings = {
-        dots: true,
+        dots: false,
         infinite: true,
         slidesToShow: 4,
         slidesToScroll: 1,
