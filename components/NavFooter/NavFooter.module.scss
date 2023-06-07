@@ -39,6 +39,10 @@
             text-transform: capitalize;
             color: #1E2832;
             margin: 1rem 0;
+            cursor: pointer;
+        }
+        li:hover {
+            color: #ff6f61;
         }
     }
     .nav__footer__item-icon {
