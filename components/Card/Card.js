@@ -6,9 +6,9 @@ import styles from './Card.module.scss';
 
 const cx = classNames.bind(styles);
 
-const Card = ({ product }) => {
+const Card = ({ product, className }) => {
     return (
-        <div className={cx('brands__subscribe__item')}>
+        <div className={cx('card__item', className)}>
             <Image 
                 className={cx('product__image')}
                 src={product.image} 
@@ -29,11 +29,11 @@ const Card = ({ product }) => {
                     </div>
             )}/>
             <p> {product.name} </p>
-            <div className={cx('subscribe__item-group')}>
+            <div className={cx('card__item-group')}>
                 <span> {product.cate} </span>
                 {
                     product.sale > 0 ? (
-                        <div className={cx('subscribe__item-sale')}>
+                        <div className={cx('card__item-sale')}>
                             <span> ${product.price.toFixed(2)} </span>
                             <p> ${(product.price - product.sale).toFixed(2)} </p>
                         </div> 

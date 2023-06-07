@@ -1,3 +1,9 @@
 .best__sellers {
     padding: 8rem 13%;
 }
+
+@media (min-width: 375px) and (max-width: 1080px) { 
+    .best__sellers {
+        padding: 3rem 1rem;
+    }
+}

@@ -46,6 +46,8 @@ import InstagramIcon from '@/assets/imgs/instagram-icon.svg';
 import ArrowIcon from '@/assets/imgs/arrow.svg';
 import ArrowLeft from '@/assets/imgs/arrow-left.svg';
 import ArrowRight from '@/assets/imgs/arrow-right.svg';
+import MenuIcon from '@/assets/imgs/menu-icon.png';
+import CloseIcon from '@/assets/imgs/close-icon.svg';
 export {
     CartIconWhite,
     ImageSlider,
@@ -95,4 +97,6 @@ export {
     ArrowIcon,
     ArrowLeft,
     ArrowRight,
+    MenuIcon,
+    CloseIcon,
 }

@@ -55,6 +55,11 @@
         button.banner__content__btn:hover {
             background-color: #FF6F61;
         }
+    }
 }
 
+@media (min-width: 375px) and (max-width: 844px) { 
+    .banner {
+        display: none;
+    }
 }

@@ -13,7 +13,7 @@
     letter-spacing: 1px;
 }
 
-.brands__subscribe__item {
+.card__item {
     min-width: calc(100% / 4 - 0.75rem);
     position: relative;
 
@@ -25,7 +25,7 @@
         color: #000000;
         margin: 0 1rem;
     }
-    .subscribe__item-group {
+    .card__item-group {
         display: flex;
         justify-content: space-between;
         margin: 0 1rem;
@@ -43,7 +43,7 @@
             line-height: 22px;
         }
 
-        .subscribe__item-sale {
+        .card__item-sale {
             display: flex;
             align-items: center;
             span {
@@ -88,12 +88,12 @@
     }
 }
 
-.brands__subscribe__item:hover .item__hover {
+.card__item:hover .item__hover {
     opacity: 1;
     bottom: 0;
     transition: all 0.5s ease;
 }
-.brands__subscribe__item:hover  .subscribe__item-sale {
+.card__item:hover  .card__item-sale {
     span {
         opacity: 0;
         transition: all 0.5s ease;
@@ -107,7 +107,7 @@
 
 .coupon {
     position: absolute;
-    top: 0;
+    top: 1rem;
     left: 0;
     padding: 6px 1rem;
     font-weight: 600;
@@ -121,4 +121,58 @@
 
 .carousel-container {
     width: 800px;
+}
+
+@media (min-width: 375px) and (max-width: 844px) { 
+    .card__item {
+        min-width: 100%;
+    
+        p {
+            font-size: 20px;
+            line-height: 30px;
+        }
+        .card__item-group {
+            span {
+                font-size: 20px;
+                line-height: 30px;
+            }
+            p {
+                font-size: 20px;
+                line-height: 30px;
+            }
+        }
+        .product__image {
+            img {
+                width: 100%;
+                height: 100%;
+            }
+        }
+    }
+}
+
+@media screen and (min-width: 820px) and (max-width: 1080px) {
+    .card__item {
+        min-width: calc(100% / 2 - 10px);
+    
+        p {
+            font-size: 20px;
+            line-height: 30px;
+        }
+        .card__item-group {
+            span {
+                font-size: 20px;
+                line-height: 30px;
+            }
+            p {
+                font-size: 20px;
+                line-height: 30px;
+            }
+        }
+        .product__image {
+            img {
+                width: 100%;
+                height: 100%;
+            }
+        }
+    }
 }

@@ -26,27 +26,33 @@ const NavFooter = () => {
             </div>
             <div className={cx('nav__footer__item')}>
                 <h3>Catalog</h3>
-                <li>Necklaces</li>
-                <li>Hoodies</li>
-                <li>Jewelry Box</li>
-                <li>T-Shirt</li>
-                <li>Jacket</li>
+                <ul>
+                    <li>Necklaces</li>
+                    <li>Hoodies</li>
+                    <li>Jewelry Box</li>
+                    <li>T-Shirt</li>
+                    <li>Jacket</li>
+                </ul>
             </div>
             <div className={cx('nav__footer__item')}>
                 <h3>About Us</h3>
-                <li>Our Producer</li>
-                <li>Sitemap</li>
-                <li>FAQ</li>
-                <li>About Us</li>
-                <li>Terms & Conditions</li>
+                <ul>
+                    <li>Our Producer</li>
+                    <li>Sitemap</li>
+                    <li>FAQ</li>
+                    <li>About Us</li>
+                    <li>Terms & Conditions</li>
+                </ul>
             </div>
             <div className={cx('nav__footer__item')}>
                 <h3>Customer services</h3>
-                <li>Contact Us</li>
-                <li>Track Your Order</li>
-                <li>Product Care & Repair</li>
-                <li>Book An Appointment</li>
-                <li>Shipping & Returns</li>
+                <ul>
+                    <li>Contact Us</li>
+                    <li>Track Your Order</li>
+                    <li>Product Care & Repair</li>
+                    <li>Book An Appointment</li>
+                    <li>Shipping & Returns</li>
+                </ul>
             </div>
         </Wrapper>
     )

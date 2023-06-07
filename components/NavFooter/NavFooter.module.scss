@@ -21,8 +21,14 @@
             text-transform: capitalize;
             color: rgba(30, 40, 50, 0.75);
         }
+        .nav__footer__item-icon {
+            width: 50%;
+            display: flex;
+            justify-content: space-between;
+        }
     }
     .nav__footer__item {
+        
         h3 {
             font-weight: 600;
             font-size: 22px;
@@ -45,9 +51,88 @@
             color: #ff6f61;
         }
     }
-    .nav__footer__item-icon {
-        width: 50%;
-        display: flex;
-        justify-content: space-between;
+
+}
+
+@media (min-width: 375px) and (max-width: 844px) { 
+    .nav__footer {
+        flex-direction: column;
+        gap: 3rem;
+
+        .nav__footer__desc {
+            gap: 3rem;
+
+            .nav__footer__item-icon {
+                width: 100%;
+                display: flex;
+                justify-content: space-around;
+            }
+        }
+
+        .nav__footer__item {
+
+            h3 {
+                font-weight: 600;
+                font-size: 22px;
+                line-height: 80px;
+                text-transform: uppercase;
+                font-family: monospace;
+            }
+            ul {
+                display: flex;
+                gap: 1rem;
+                flex-wrap: wrap;
+
+                li {
+                    margin: 0.5rem 0;
+                    width: calc(100% / 2 - 0.5rem);
+                }
+            }
+    
+        }
+
+    }
+}
+
+@media screen and (min-width: 820px) and (max-width: 1080px) {
+    .nav__footer {
+        flex-direction: row;
+        flex-wrap: wrap;
+        gap: 2rem;
+        flex: 1;
+
+        .nav__footer__desc {
+            gap: 3rem;
+            width: 330px;
+
+            .nav__footer__item-icon {
+                width: 100%;
+                display: flex;
+                justify-content: space-around;
+            }
+        }
+
+        .nav__footer__item {
+
+            h3 {
+                font-weight: 600;
+                font-size: 22px;
+                line-height: 80px;
+                text-transform: uppercase;
+                font-family: monospace;
+            }
+            ul {
+                display: flex;
+                gap: 1rem;
+                flex-wrap: wrap;
+
+                li {
+                    margin: 0.5rem 0;
+                    width: calc(100% / 2 - 5rem);
+                }
+            }
+    
+        }
+
     }
 }

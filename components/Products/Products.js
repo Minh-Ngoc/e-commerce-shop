@@ -29,6 +29,26 @@ const Products = ({ title, data, filterIcon, filterText, slider, ...props }) => 
         pauseOnHover: true,
         prevArrow: <Arrows className={cx('slick__arrow')} left='-5rem' icon={<ArrowLeft />} />,
         nextArrow: <Arrows className={cx('slick__arrow')} icon={<ArrowRight />} />,
+        responsive: [
+            {
+              breakpoint: 414,
+              settings: {
+                slidesToShow: 1,
+              },
+            },
+            {
+              breakpoint: 896,
+              settings: {
+                slidesToShow: 2,
+              },
+            },
+            {
+                breakpoint: 820,
+                settings: {
+                  slidesToShow: 2,
+                },
+            },
+        ],
     };
     
       
@@ -43,22 +63,24 @@ const Products = ({ title, data, filterIcon, filterText, slider, ...props }) => 
                         <span>Hoodies</span>
                         <span>Jacket</span>
                     </div>
-                <Button 
-                    className={cx('product__btn')} 
-                    svg={filterIcon}
-                    text={filterText}
-                />
+                <div className={cx('product__btn')} >
+                    <Button 
+                        svg={filterIcon}
+                        text={filterText}
+                    />
+                </div>
             </div>  
-            <div className={cx('product__slider')}>
                 {
                     slider ? (
-                        <Slider {...settings}>
-                        {
-                            data.map(product => 
-                                ( <Card product={product} key={product.id}/> )
-                            )
-                        }
-                        </Slider>
+                        <div className={cx('product__slider')}>
+                            <Slider {...settings}>
+                            {
+                                data.map(product => 
+                                    ( <Card product={product} key={product.id}/> )
+                                )
+                            }
+                            </Slider>
+                        </div>
                     ) : (
                         <div className={cx('products__container')}>
                             {
@@ -70,7 +92,6 @@ const Products = ({ title, data, filterIcon, filterText, slider, ...props }) => 
                     )
                     
                 }
-            </div>
         </div>    
     )
 }
