@@ -6,13 +6,14 @@ import Image from "next/image";
 
 const cx = classNames.bind(styles);
 
-const ButtonComp = ({ svg, src, text, icon, border, left, right, bg, color, className, ...props }) => {
+const ButtonComp = ({ svg, src, text, icon, border, radius, left, right, bg, color, className, ...props }) => {
     const style = {
         border: border && border,
         backgroundColor: bg && bg,
         color: color && color,
         left: left && left,
         right: right && right,
+        borderRadius: radius & radius,
     }
     return (
         <Button 

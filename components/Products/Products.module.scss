@@ -74,8 +74,9 @@
 }
 .products__container {
     display: flex;
+    justify-content: space-between;
+    gap: 2rem;
     flex-wrap: wrap;
-    gap: 1rem;
 }
 
 .slick__arrow {
@@ -159,13 +160,13 @@
         }
     }
     .products__container {
-        gap: 1rem;
+        gap: 1rem !important;
         justify-content: space-between;
         padding: 0;
     }
 
     .product__slider {
-        width: 76%;
+        width: 85%;
         margin: 0 auto;
     }
 }

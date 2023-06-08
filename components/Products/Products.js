@@ -24,7 +24,7 @@ const Products = ({ title, data, filterIcon, filterText, slider, ...props }) => 
         infinite: true,
         slidesToShow: 4,
         slidesToScroll: 1,
-        autoplay: true,
+        // autoplay: true,
         autoplaySpeed: 2000,
         pauseOnHover: true,
         prevArrow: <Arrows className={cx('slick__arrow')} left='-5rem' icon={<ArrowLeft />} />,
