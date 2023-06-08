@@ -103,7 +103,7 @@
 
         .nav__footer__desc {
             gap: 3rem;
-            width: 330px;
+            width: 350px;
 
             .nav__footer__item-icon {
                 width: 100%;
@@ -122,13 +122,14 @@
                 font-family: monospace;
             }
             ul {
+                max-width: 370px;
                 display: flex;
                 gap: 1rem;
                 flex-wrap: wrap;
 
                 li {
                     margin: 0.5rem 0;
-                    width: calc(100% / 2 - 5rem);
+                    width: calc(100% / 2 - 1rem);
                 }
             }
     
