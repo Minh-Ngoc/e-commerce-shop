@@ -76,7 +76,7 @@ const Products = ({ title, data, filterIcon, filterText, slider, ...props }) => 
                             <Slider {...settings}>
                             {
                                 data.map(product => 
-                                    ( <Card product={product} key={product.id}/> )
+                                    ( <Card className={cx('product__list')} product={product} key={product.id}/> )
                                 )
                             }
                             </Slider>

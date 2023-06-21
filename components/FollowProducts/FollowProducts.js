@@ -14,8 +14,9 @@ const FollowProducts = () => {
             <h1>Follow products and discounts on Instagram</h1>
             <div className={cx('follow__products__container')}>
                 {
-                    followPrdsItem.map(pd => (
+                    followPrdsItem.map((pd, index) => (
                         <Image 
+                            key={index}
                             className={cx('follow__products__item')} 
                             src={pd} 
                             children={(

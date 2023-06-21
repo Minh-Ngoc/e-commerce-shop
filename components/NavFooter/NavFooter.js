@@ -20,7 +20,7 @@ const NavFooter = () => {
                 </p>
                 <div className={cx('nav__footer__item-icon')}>
                     {
-                        imagesIcon.map(Icon => <Icon />)
+                        imagesIcon.map((Icon, index) => <Icon key={index} />)
                     }
                 </div>
             </div>

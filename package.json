@@ -1,5 +1,5 @@
 {
-  "name": "nextjs-admin-shop",
+  "name": "nexjs-client-shop",
   "version": "0.1.0",
   "private": true,
   "scripts": {
@@ -10,10 +10,15 @@
   },
   "dependencies": {
     "@svgr/webpack": "^8.0.1",
+    "antd": "^5.5.2",
     "classnames": "^2.3.2",
-    "next": "13.4.4",
-    "react": "18.2.0",
-    "react-dom": "18.2.0",
-    "sass": "^1.63.2"
+    "next": "^13.4.4",
+    "react": "^18.2.0",
+    "react-dom": "^18.2.0",
+    "react-redux": "^8.0.7",
+    "react-slick": "^0.29.0",
+    "redux": "^4.2.1",
+    "sass": "^1.62.1",
+    "slick-carousel": "^1.8.1"
   }
 }
