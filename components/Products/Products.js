@@ -43,9 +43,15 @@ const Products = ({ title, data, filterIcon, filterText, slider, ...props }) => 
               },
             },
             {
-                breakpoint: 820,
+                breakpoint: 600,
                 settings: {
                   slidesToShow: 2,
+                },
+            },
+            {
+                breakpoint: 1024,
+                settings: {
+                  slidesToShow: 3,
                 },
             },
         ],
