@@ -6,7 +6,7 @@
     bottom: -10%;
     right: 0;
     opacity: 0;
-    padding: 1rem;
+    padding: 1rem 10px;
     color: #fff;
     background-color: #1e2832;
     font-size: 20px;
@@ -70,7 +70,7 @@
         align-items: center;
         .item__icon-group {
             svg + svg {
-                margin-left: 1rem;
+                margin-left: 6px;
             }
         }
         z-index: 999;
