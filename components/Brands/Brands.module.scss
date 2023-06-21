@@ -1,7 +1,7 @@
 .brands {
     margin-top: 6rem;
     display: block;
-    padding: 0 10%;
+    padding: 0 5%;
 
     .brands__header {
         display: flex;
@@ -10,6 +10,7 @@
     }
     .brands__content {
         display: flex;
+        flex-wrap: wrap;
         margin: 6rem 0;
         gap: 14px;
     }
@@ -18,6 +19,7 @@
 .brands__left {
     position: relative;
     display: inline-block;
+    flex: 1;
 
     > p {
         font-weight: 400;
@@ -36,6 +38,11 @@
     .brands__index {
         margin-left: 3rem;
         position: relative;
+        
+        > img {
+            width: 100%;
+            height: auto;
+        }
     }
     .brand__item__hover {
         position: relative;
@@ -50,6 +57,7 @@
     display: flex;
     flex-wrap: wrap;
     gap: 10px;
+    flex: 1;
 
     .brands__right__item {
         width: calc(100%/2 - 5px);
@@ -57,7 +65,8 @@
 
         img {
             width: 100%;
-            height: 100%;
+            max-width: 312px;
+            height: auto;
         }
     }
     .brands__right__item:hover > .item__hover {
@@ -98,7 +107,7 @@
 @media (min-width: 375px) and (max-width: 844px) {
     .brands {
         margin-top: 6rem;
-        padding: 0;
+        padding: 0 1rem;
     
         .brands__header {
             flex-wrap: wrap;
@@ -106,11 +115,10 @@
             gap: 1rem;
         }
         .brands__content {
-            display: flex;
             margin: 3rem 0;
-            gap: 1rem;
-            flex-direction: column;
+            display: flex;
             flex-wrap: wrap;
+            gap: 1rem;
         }
     }
     
@@ -148,11 +156,15 @@
     }
 }
 
-@media screen and (min-width: 820px) and (max-width: 1080px) {
+@media screen and (max-width: 1190px) {
     .brands {
-    
+        .brands__header {
+            flex-wrap: wrap;
+            justify-content:space-evenly;
+            gap: 1rem;
+        }
+        
         .brands__content {
-            display: flex;
             margin: 3rem 0 5rem 0;
             gap: 2rem;
         }
@@ -164,6 +176,7 @@
     
         > p {
             line-height: 40px;
+            font-size: 18px;
             position: absolute;
             transform: rotate(-90deg);
         }
@@ -182,5 +195,48 @@
                 height: 100%;
             }
         }
+    }
+}
+
+@media (max-width: 955px) {
+    .brands__content {
+        flex-direction: column;
+        font-size: 30px ;
+    }
+    .brands__left {
+        
+        > p {
+            line-height: 50px;
+            position: inherit;
+            left: 0 !important;
+            transform: rotate(0deg);
+        }
+    }
+}
+
+@media (max-width: 1400px) {
+    .brands__left {
+        .brands__index {
+            margin-top: 3rem;
+            margin-left: 0rem;
+            
+            > img {
+                width: 100%;
+                height: auto;
+            }
+        }
+        > p {
+            top: 0;
+            left: 5%;
+            font-size: 24px;
+            transform: rotate(0);
+        }
+        
+    }
+}
+
+@media screen and (min-width: 1500px) {
+    .brands {
+        padding: 0 10%;
     }
 }
